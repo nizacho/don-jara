@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表の合計を計算する</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>せいじ</th>
+                <th>ますみち</th>
+                <th>ちはる</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <tr>
+                <td><input type="number" step="100" value="1000" class="input-a"></td>
+                <td><input type="number" step="100" value="-1000" class="input-b"></td>
+                <td><input type="number" step="100" value="0" class="input-c"></td>
+            </tr>
+            <tr>
+                <td><input type="number" step="100" value="-200" class="input-a"></td>
+                <td><input type="number" step="100" value="-300" class="input-b"></td>
+                <td><input type="number" step="100" value="500" class="input-c"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="total-a">0</td>
+                <td id="total-b">0</td>
+                <td id="total-c">0</td>
+            </tr>
+        </tfoot>
+    </table>
+    <button id="add-row">行を追加</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

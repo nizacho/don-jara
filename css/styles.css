@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 5px;
+}
+
+/* メディアクエリを使用して、スマホ向けのスタイルを設定 */
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    input {
+        padding: 8px;
+    }
+}
